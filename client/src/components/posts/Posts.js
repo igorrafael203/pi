@@ -17,9 +17,9 @@ const Posts = ({ getPosts, post: { posts } }) => {
         <i className="fas fa-user" /> Welcome to the community
       </p>
       <PostForm />
-      <div className="posts">
+      <div className="posts" style={{whiteSpace: "pre-wrap"}}>
         {posts.map((post) => (
-          <PostItem key={post._id} post={post} />
+          <PostItem key={post._id} post={post} s />
         ))}
       </div>
     </section>
